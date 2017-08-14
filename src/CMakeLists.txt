@@ -18,7 +18,7 @@ include_directories("${WinDivert_Location}/include")
 link_directories(${GTKMM_LIBRARY_DIRS})
 link_directories("${WinDivert_Location}/amd64")
 
-add_executable(main ${MAIN_SRC})
+add_executable(main ${MAIN_SRC} rc/main.rc)
 
 
 target_link_libraries(main ${LIBS})
